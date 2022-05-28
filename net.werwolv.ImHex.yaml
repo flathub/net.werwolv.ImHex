@@ -81,7 +81,8 @@ modules:
           tag-pattern: ^v([\d.]+)$
       - type: shell
         commands:
-          - sed -i "s#downloadImHexPatternsFiles()##g" CMakeLists.txt # offline build
+          - sed -i "s#downloadImHexPatternsFiles()##g" CMakeLists.txt   # offline build
+
       - type: file
         path: net.werwolv.ImHex.appdata.xml
     post-install:
