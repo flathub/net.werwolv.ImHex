@@ -5,20 +5,16 @@
   <summary>A hex editor for reverse engineers and programmers</summary>
   <description>
     <p>
-      ImHex is a hex editor for reverse engineers, programmers and people that
-      value their eye sight when working at 3 AM.
+      ImHex is a modern Hex Editor for Reverse Engineers, Developers, Malware Analysists and Hackers who value
+      their retinas when working at 3 AM again.
     </p>
     <p>
       Features:
       <ul>
         <li>Featureful hex view</li>
-        <li>Custom C++-like pattern language for parsing highlighting a file's content</li>
-        <li>Data importing</li>
-        <li>Data exporting</li>
-        <li>
-          Data inspector allowing interpretation of data as many different types
-          (little and big endian)
-        </li>
+        <li>Custom C++-like pattern language for parsing and highlighting a file's content</li>
+        <li>Data importing and exporting</li>
+        <li>Data inspector allowing interpretation of data as many different types</li>
         <li>Huge file support with fast and efficient loading</li>
         <li>Strings search</li>
         <li>File hashing support</li>
@@ -28,9 +24,9 @@
         <li>
           Helpful tools: Itanium and MSVC demangler, ASCII table, Regex
           replacer, mathematical expression evaluator (calculator), hexadecimal
-          color picker
+          color picker and many more
         </li>
-        <li>Built-in cheat sheet for pattern language and Math evaluator</li>
+        <li>Doesn't burn out your retinas when used in late-night sessions</li>
       </ul>
     </p>
   </description>
@@ -43,12 +39,12 @@
   <url type="donation">https://www.patreon.com/werwolv</url>
   <screenshots>
     <screenshot type="default" width="1920" height="1017">
-      <image type="source">https://i.imgur.com/xH7xJ4g.png</image>
-      <caption>Inspecting a binary file</caption>
+      <image type="source">https://user-images.githubusercontent.com/10835354/139717326-8044769d-527b-4d88-8adf-2d4ecafdca1f.png</image>
+      <caption>Using a pattern to parse and highlight different sections of a PE executable file</caption>
     </screenshot>
     <screenshot type="default" width="1920" height="1017">
-        <image type="source">https://i.imgur.com/fhVJYEa.png</image>
-        <caption>Disassembling a binary file</caption>
+        <image type="source">https://user-images.githubusercontent.com/10835354/139717323-1f8c9d52-f7eb-4f43-9f11-097ac728ed6c.png</image>
+        <caption>Managing bookmarks, disassembling machine code and decrypting AES excrypted data on the fly</caption>
       </screenshot>
   </screenshots>
   <content_rating type="oars-1.1"/>
