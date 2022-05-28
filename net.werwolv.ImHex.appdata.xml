@@ -10,25 +10,25 @@
     </p>
     <p>
       Features:
-      <ul>
-        <li>Featureful hex view</li>
-        <li>Custom C++-like pattern language for parsing and highlighting a file's content</li>
-        <li>Data importing and exporting</li>
-        <li>Data inspector allowing interpretation of data as many different types</li>
-        <li>Huge file support with fast and efficient loading</li>
-        <li>Strings search</li>
-        <li>File hashing support</li>
-        <li>Disassembler supporting many different architectures: ARM, x86, PowerPC, MIPS, and more</li>
-        <li>Bookmarks</li>
-        <li>Data analyzer</li>
-        <li>
-          Helpful tools: Itanium and MSVC demangler, ASCII table, Regex
-          replacer, mathematical expression evaluator (calculator), hexadecimal
-          color picker and many more
-        </li>
-        <li>Doesn't burn out your retinas when used in late-night sessions</li>
-      </ul>
     </p>
+    <ul>
+      <li>Featureful hex view</li>
+      <li>Custom C++-like pattern language for parsing and highlighting a file's content</li>
+      <li>Data importing and exporting</li>
+      <li>Data inspector allowing interpretation of data as many different types</li>
+      <li>Huge file support with fast and efficient loading</li>
+      <li>Strings search</li>
+      <li>File hashing support</li>
+      <li>Disassembler supporting many different architectures: ARM, x86, PowerPC, MIPS, and more</li>
+      <li>Bookmarks</li>
+      <li>Data analyzer</li>
+      <li>
+        Helpful tools such as an Itanium and MSVC demangler, ASCII table, Regex
+        replacer, mathematical expression evaluator (calculator), hexadecimal
+        color picker and many more
+      </li>
+      <li>Doesn't burn out your retinas when used in late-night sessions</li>
+    </ul>
   </description>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-only</project_license>
