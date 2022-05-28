@@ -39,13 +39,13 @@
   <url type="donation">https://www.patreon.com/werwolv</url>
   <screenshots>
     <screenshot type="default" width="1920" height="1017">
+        <image type="source">https://user-images.githubusercontent.com/10835354/139717323-1f8c9d52-f7eb-4f43-9f11-097ac728ed6c.png</image>
+        <caption>Managing bookmarks, disassembling machine code and decrypting AES excrypted data on the fly</caption>
+    </screenshot>
+    <screenshot type="default" width="1920" height="1017">
       <image type="source">https://user-images.githubusercontent.com/10835354/139717326-8044769d-527b-4d88-8adf-2d4ecafdca1f.png</image>
       <caption>Using a pattern to parse and highlight different sections of a PE executable file</caption>
     </screenshot>
-    <screenshot type="default" width="1920" height="1017">
-        <image type="source">https://user-images.githubusercontent.com/10835354/139717323-1f8c9d52-f7eb-4f43-9f11-097ac728ed6c.png</image>
-        <caption>Managing bookmarks, disassembling machine code and decrypting AES excrypted data on the fly</caption>
-      </screenshot>
   </screenshots>
   <content_rating type="oars-1.1"/>
   <releases>
