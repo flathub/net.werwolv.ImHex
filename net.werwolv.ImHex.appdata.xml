@@ -33,7 +33,7 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-only</project_license>
   <developer_name>WerWolv</developer_name>
-  <url type="homepage">https://github.com/WerWolv/ImHex</url>
+  <url type="homepage">https://imhex.werwolv.net</url>
   <url type="help">https://github.com/WerWolv/ImHex</url>
   <url type="bugtracker">https://github.com/WerWolv/ImHex/issues</url>
   <url type="donation">https://www.patreon.com/werwolv</url>
@@ -49,7 +49,8 @@
   </screenshots>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="1.18.0" date="2022-05-28"/>
     <release version="1.17.0" date="2022-04-18"/>
   </releases>
-  <update_contact>werwolv98@gmail.com</update_contact>
+  <update_contact>hey@werwolv.net</update_contact>
 </component>
