@@ -74,14 +74,14 @@ modules:
     sources:
       - type: git
         url: https://github.com/WerWolv/ImHex.git
-        tag: v1.18.0
-        commit: 857aadfa61284c64f96d27ca586baeb633651a4d
+        tag: v1.18.1
+        commit: e5ff9873924e1b7492c5017bb9398a5fe88ea631
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
       - type: shell
         commands:
-          - 'sed -i "s#downloadImHexPatternsFiles()##g" CMakeLists.txt' # offline build
+          - sed -i "s#downloadImHexPatternsFiles()##g" CMakeLists.txt   # offline build
       - type: file
         path: net.werwolv.ImHex.appdata.xml
     post-install:
