@@ -12,6 +12,10 @@ finish-args:
   - --filesystem=home
   - --device=dri
 
+build-options:
+  - build-args:
+    - --share=network
+
 modules:
   - name: glfw
     buildsystem: cmake-ninja
