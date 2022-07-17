@@ -71,6 +71,7 @@ modules:
       - -DUSE_SYSTEM_CURL=ON
       - -DUSE_SYSTEM_FMT=ON
       - -DUSE_SYSTEM_YARA=ON
+      - -DIMHEX_OFFLINE_BUILD=ON
     sources:
       - type: git
         url: https://github.com/WerWolv/ImHex.git
@@ -79,11 +80,6 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
-      - type: shell
-        commands:
-          - sed -i "s/downloadImHexPatternsFiles\\(/#downloadImHexPatternsFiles\\(/g"
-            cmake/build_helpers.cmake                                                                             # offline build
-
       - type: file
         path: net.werwolv.ImHex.appdata.xml
     post-install:
