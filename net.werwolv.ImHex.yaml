@@ -80,6 +80,16 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
+      - type: git
+        url: https://github.com/WerWolv/ImHex-Patterns.git
+        tag: ImHex-v1.22.0
+        commit: 72acac10828355734d3b1c380dc776481bf91e7e
+        dest: ImHex-Patterns
+        x-checker-data:
+          type: git
+          tag-pattern: ^ImHex-v([\d.]+)$
+      - type: patch
+        path: offline_patterns.patch
       - type: file
         path: net.werwolv.ImHex.appdata.xml
     post-install:
