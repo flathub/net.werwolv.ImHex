@@ -88,8 +88,6 @@ modules:
         x-checker-data:
           type: git
           tag-pattern: ^ImHex-v([\d.]+)$
-      - type: patch
-        path: offline_patterns.patch
       - type: file
         path: net.werwolv.ImHex.appdata.xml
     post-install:
