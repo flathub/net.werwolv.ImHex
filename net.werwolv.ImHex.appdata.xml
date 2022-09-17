@@ -49,6 +49,7 @@
   </screenshots>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="1.23.1" date="2022-09-17"/>
     <release version="1.23.0" date="2022-09-15"/>
     <release version="1.22.0" date="2022-09-03"/>
     <release version="1.21.2" date="2022-08-17"/>

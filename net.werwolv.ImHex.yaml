@@ -75,14 +75,14 @@ modules:
     sources:
       - type: git
         url: https://github.com/WerWolv/ImHex.git
-        tag: v1.23.0
-        commit: 44a90f5c7d559ce540f33005ac63c417f894bc03
+        tag: v1.23.1
+        commit: 60eb59c605e32ea1a1a9a4b356cc0930235b878c
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
       - type: git
         url: https://github.com/WerWolv/ImHex-Patterns.git
-        tag: ImHex-v1.23.0
+        tag: ImHex-v1.23.1
         commit: 5481c2ff6abab42877f60c1f05bd7560358f33d2
         dest: ImHex-Patterns
         x-checker-data:
