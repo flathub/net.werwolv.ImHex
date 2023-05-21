@@ -23,8 +23,8 @@ modules:
       - -DGLFW_BUILD_DOCS=OFF
     sources:
       - type: archive
-        url: https://github.com/glfw/glfw/releases/download/3.3.2/glfw-3.3.2.zip
-        sha256: 08a33a512f29d7dbf78eab39bd7858576adcc95228c9efe8e4bc5f0f3261efc7
+        url: https://github.com/glfw/glfw/releases/download/3.3.8/glfw-3.3.8.zip
+        sha256: 4d025083cc4a3dd1f91ab9b9ba4f5807193823e565a5bcf4be202669d9911ea6
     cleanup:
       - /include
       - /lib/pkgconfig
@@ -37,8 +37,8 @@ modules:
       - -DENABLE_PROGRAMS=OFF
     sources:
       - type: archive
-        url: https://github.com/ARMmbed/mbedtls/archive/refs/tags/v2.27.0.tar.gz
-        sha256: 2a07856e541f0e5f6eaee4f78018c52f25bd244ed76f9020dea54a8b02cac6ea
+        url: https://github.com/ARMmbed/mbedtls/archive/refs/tags/v3.4.0.tar.gz
+        sha256: 1b899f355022e8d02c4d313196a0a16af86c5a692456fa99d302915b8cf0320a
     cleanup:
       - /include
 
@@ -49,8 +49,8 @@ modules:
       - -DFMT_TEST=OFF
     sources:
       - type: archive
-        url: https://github.com/fmtlib/fmt/releases/download/8.1.1/fmt-8.1.1.zip
-        sha256: 23778bad8edba12d76e4075da06db591f3b0e3c6c04928ced4a7282ca3400e5d
+        url: https://github.com/fmtlib/fmt/releases/download/10.0.0/fmt-10.0.0.zip
+        sha256: 4943cb165f3f587f26da834d3056ee8733c397e024145ca7d2a8a96bb71ac281
     cleanup:
       - /include
 
@@ -59,8 +59,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/VirusTotal/yara.git
-        tag: v4.2.1
-        commit: 037c536fbefe58525895d30a5c9a29ff57ecdb48
+        tag: v4.3.1
+        commit: a6f6ce1d6d74a03c396660db25765f2a794d9e30
     cleanup:
       - /include
 
@@ -75,15 +75,15 @@ modules:
     sources:
       - type: git
         url: https://github.com/WerWolv/ImHex.git
-        tag: v1.28.0
-        commit: fc105ecc3dcec137134547fb1faa759021d9ff7e
+        tag: v1.29.0
+        commit: dc8245ce4cebb7adb283c499dee2535aea4cde85
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
       - type: git
         url: https://github.com/WerWolv/ImHex-Patterns.git
-        tag: ImHex-v1.28.0
-        commit: 1cd7f92a5d019fc571ca302d58f852a658f547fe
+        tag: ImHex-v1.29.0
+        commit: 0128ea87db23bad858ad25d534390c9d599a586a
         dest: ImHex-Patterns
         x-checker-data:
           type: git
