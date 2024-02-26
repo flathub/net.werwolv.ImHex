@@ -32,11 +32,16 @@
   </description>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-only</project_license>
-  <developer_name>WerWolv</developer_name>
+  <developer id="net.werwolv">
+    <name>WerWolv</name>
+  </developer>
   <url type="homepage">https://imhex.werwolv.net</url>
-  <url type="help">https://github.com/WerWolv/ImHex</url>
   <url type="bugtracker">https://github.com/WerWolv/ImHex/issues</url>
+  <url type="help">https://docs.werwolv.net/imhex</url>
   <url type="donation">https://www.patreon.com/werwolv</url>
+  <url type="contact">https://imhex.werwolv.net/discord</url>
+  <url type="vcs-browser">https://github.com/WerWolv/ImHex</url>
+  <url type="contribute">https://github.com/WerWolv/ImHex/blob/master/CONTRIBUTING.md</url>
   <launchable type="desktop-id">imhex.desktop</launchable>
   <screenshots>
     <screenshot type="default" width="1920" height="1017">

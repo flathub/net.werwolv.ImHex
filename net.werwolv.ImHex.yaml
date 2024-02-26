@@ -89,8 +89,8 @@ modules:
           type: git
           tag-pattern: ^ImHex-v([\d.]+)$
       - type: file
-        path: net.werwolv.ImHex.appdata.xml
+        path: net.werwolv.ImHex.metainfo.xml
     post-install:
-      - install -Dm644 ../net.werwolv.ImHex.appdata.xml ${FLATPAK_DEST}/share/appdata/net.werwolv.ImHex.appdata.xml
+      - install -Dm644 ../net.werwolv.ImHex.metainfo.xml ${FLATPAK_DEST}/share/metainfo/net.werwolv.ImHex.metainfo.xml
       - install -Dm0644 ../resources/icon.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
       - desktop-file-edit --set-key="Icon" --set-value="${FLATPAK_ID}" "${FLATPAK_DEST}/share/applications/imhex.desktop"
