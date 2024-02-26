@@ -37,6 +37,7 @@
   <url type="help">https://github.com/WerWolv/ImHex</url>
   <url type="bugtracker">https://github.com/WerWolv/ImHex/issues</url>
   <url type="donation">https://www.patreon.com/werwolv</url>
+  <launchable type="desktop-id">imhex.desktop</launchable>
   <screenshots>
     <screenshot type="default" width="1920" height="1017">
         <image type="source">https://user-images.githubusercontent.com/10835354/139717323-1f8c9d52-f7eb-4f43-9f11-097ac728ed6c.png</image>
@@ -49,6 +50,7 @@
   </screenshots>
   <content_rating type="oars-1.1"/>
   <releases>
+    <release version="1.33.0" date="2024-02-26"/>
     <release version="1.32.1" date="2024-01-01"/>
     <release version="1.32.0" date="2023-12-28"/>
     <release version="1.31.0" date="2023-09-24"/>
