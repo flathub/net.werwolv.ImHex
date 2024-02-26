@@ -32,7 +32,9 @@
   </description>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0-only</project_license>
-  <developer_name>WerWolv</developer_name>
+  <developer id="net.werwolv">
+    <name>WerWolv</name>
+  </developer>
   <url type="homepage">https://imhex.werwolv.net</url>
   <url type="bugtracker">https://github.com/WerWolv/ImHex/issues</url>
   <url type="help">https://docs.werwolv.net/imhex</url>
