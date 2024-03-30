@@ -2,11 +2,11 @@
 <component type="desktop">
   <id>net.werwolv.ImHex</id>
   <name>ImHex</name>
-  <summary>Modern REing Hex Editor</summary>
+  <summary>A hex editor for reverse engineers and programmers</summary>
   <description>
     <p>
       ImHex is a modern Hex Editor for Reverse Engineers, Developers, Malware Analysists and Hackers who value
-      their retinas when working at 3 AM once again.
+      their retinas when working at 3 AM again.
     </p>
     <p>
       Features:
@@ -45,19 +45,15 @@
   <launchable type="desktop-id">imhex.desktop</launchable>
   <screenshots>
     <screenshot type="default" width="1920" height="1017">
-        <image type="source">https://raw.githubusercontent.com/flathub/net.werwolv.ImHex/master/screenshots/screenshot1.png</image>
-        <caption>Using a pattern to parse and highlight different sections of an ELF executable file</caption>
+        <image type="source">https://user-images.githubusercontent.com/10835354/139717323-1f8c9d52-f7eb-4f43-9f11-097ac728ed6c.png</image>
+        <caption>Managing bookmarks, disassembling machine code and decrypting AES excrypted data on the fly</caption>
     </screenshot>
     <screenshot type="default" width="1920" height="1017">
-      <image type="source">https://raw.githubusercontent.com/flathub/net.werwolv.ImHex/master/screenshots/screenshot2.png</image>
-      <caption>Managing bookmarks, diffing two files and decrypting a region of data using the data preprocessor</caption>
+      <image type="source">https://user-images.githubusercontent.com/10835354/139717326-8044769d-527b-4d88-8adf-2d4ecafdca1f.png</image>
+      <caption>Using a pattern to parse and highlight different sections of a PE executable file</caption>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.1"/>
-  <branding>
-    <color type="primary" scheme_preference="light">#babec9</color>
-    <color type="primary" scheme_preference="dark">#0f0f0f</color>
-  </branding>
   <releases>
     <release version="1.33.2" date="2024-03-23"/>
     <release version="1.33.1" date="2024-03-02"/>
