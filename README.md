@@ -8,5 +8,5 @@ For format patterns, includable libraries magic and constant files, check out th
 
 ## Screenshots
 
-![Hex editor, patterns and data information](https://user-images.githubusercontent.com/10835354/139717326-8044769d-527b-4d88-8adf-2d4ecafdca1f.png)
-![Bookmarks, disassembler and data processor](https://user-images.githubusercontent.com/10835354/139717323-1f8c9d52-f7eb-4f43-9f11-097ac728ed6c.png)
+![Hex editor, patterns and data information](https://raw.githubusercontent.com/flathub/net.werwolv.ImHex/master/screenshots/screenshot1.png)
+![Bookmarks, disassembler and data processor](https://raw.githubusercontent.com/flathub/net.werwolv.ImHex/master/screenshots/screenshot2.png)
