@@ -75,22 +75,24 @@ modules:
     sources:
       - type: git
         url: https://github.com/WerWolv/ImHex.git
-        tag: v1.33.2
-        commit: 8802a8e8617145b370354fab82ec01032be15fd4
+        tag: v1.34.0
+        commit: 72d5707d33af07237b691031d80e5fe9a0a8c763
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
       - type: git
         url: https://github.com/WerWolv/ImHex-Patterns.git
-        tag: ImHex-v1.33.2
-        commit: 0549e62a14ae6d3c398c6ff8b29549d4671a306f
+        tag: ImHex-v1.34.0
+        commit: 10bf1c76cfa74ef4a5166b593b217fff803008c0
         dest: ImHex-Patterns
         x-checker-data:
           type: git
           tag-pattern: ^ImHex-v([\d.]+)$
       - type: file
         path: net.werwolv.ImHex.metainfo.xml
+      - type: file
+        path: icon.png
     post-install:
       - install -Dm644 ../net.werwolv.ImHex.metainfo.xml ${FLATPAK_DEST}/share/metainfo/net.werwolv.ImHex.metainfo.xml
-      - install -Dm0644 ../resources/icon.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
+      - install -Dm0644 ../icon.png ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.png
       - desktop-file-edit --set-key="Icon" --set-value="${FLATPAK_ID}" "${FLATPAK_DEST}/share/applications/imhex.desktop"
