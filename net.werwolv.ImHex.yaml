@@ -90,6 +90,8 @@ modules:
           tag-pattern: ^ImHex-v([\d.]+)$
       - type: file
         path: net.werwolv.ImHex.metainfo.xml
+      - type: file
+        path: icon.png
     post-install:
       - install -Dm644 ../net.werwolv.ImHex.metainfo.xml ${FLATPAK_DEST}/share/metainfo/net.werwolv.ImHex.metainfo.xml
       - install -Dm0644 ../icon.png ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.png
