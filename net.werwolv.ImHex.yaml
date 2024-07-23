@@ -91,8 +91,8 @@ modules:
       - type: file
         path: net.werwolv.ImHex.metainfo.xml
       - type: file
-        path: icon.png
+        path: icon.svg
     post-install:
       - install -Dm644 ../net.werwolv.ImHex.metainfo.xml ${FLATPAK_DEST}/share/metainfo/net.werwolv.ImHex.metainfo.xml
-      - install -Dm0644 ../icon.png ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.png
+      - install -Dm0644 ../icon.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
       - desktop-file-edit --set-key="Icon" --set-value="${FLATPAK_ID}" "${FLATPAK_DEST}/share/applications/imhex.desktop"
