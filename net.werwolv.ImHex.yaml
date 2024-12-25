@@ -1,6 +1,6 @@
 app-id: net.werwolv.ImHex
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: imhex
 rename-desktop-file: imhex.desktop
@@ -23,8 +23,8 @@ modules:
       - -DGLFW_BUILD_DOCS=OFF
     sources:
       - type: archive
-        url: https://github.com/glfw/glfw/releases/download/3.3.8/glfw-3.3.8.zip
-        sha256: 4d025083cc4a3dd1f91ab9b9ba4f5807193823e565a5bcf4be202669d9911ea6
+        url: https://github.com/glfw/glfw/releases/download/3.4/glfw-3.4.zip
+        sha256: b5ec004b2712fd08e8861dc271428f048775200a2df719ccf575143ba749a3e9
     cleanup:
       - /include
       - /lib/pkgconfig
@@ -64,6 +64,18 @@ modules:
     cleanup:
       - /include
 
+  - name: lunasvg
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DBUILD_SHARED_LIBS=ON
+      - -DLUNASVG_BUILD_EXAMPLES=OFF
+    sources:
+      - type: archive
+        url: https://github.com/sammycage/lunasvg/archive/refs/tags/v3.0.1.tar.gz
+        sha256: 39e3f47d4e40f7992d7958123ca1993ff1a02887539af2af1c638da2855a603c
+    cleanup:
+      - /include
+
   - name: imhex
     buildsystem: cmake-ninja
     builddir: true
@@ -71,6 +83,7 @@ modules:
       - -DUSE_SYSTEM_CURL=ON
       - -DUSE_SYSTEM_FMT=ON
       - -DUSE_SYSTEM_YARA=ON
+      - -DUSE_SYSTEM_LUNASVG=ON
       - -DIMHEX_OFFLINE_BUILD=ON
     sources:
       - type: git
