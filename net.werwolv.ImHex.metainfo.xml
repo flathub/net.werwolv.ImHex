@@ -59,8 +59,11 @@
     <color type="primary" scheme_preference="dark">#0f0f0f</color>
   </branding>
   <releases>
-    <release version="1.36.2" date="2024-12-28">
+    <release version="1.37.1" date="2025-02-20">
       <description></description>
+    </release>
+    <release version="1.36.2" date="2024-12-28">
+      <description/>
     </release>
     <release version="1.36.1" date="2024-12-28">
       <description/>
