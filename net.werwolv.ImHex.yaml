@@ -72,6 +72,7 @@ modules:
       - -DUSE_SYSTEM_FMT=ON
       - -DUSE_SYSTEM_YARA=ON
       - -DIMHEX_OFFLINE_BUILD=ON
+      - -DIMHEX_STRICT_WARNINGS=OFF
     sources:
       - type: git
         url: https://github.com/WerWolv/ImHex.git
