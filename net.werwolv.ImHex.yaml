@@ -29,6 +29,10 @@ modules:
     cleanup:
       - /include
       - /lib/pkgconfig
+      - /lib/pkgconfig
+      - /lib64/pkgconfig
+      - /lib/cmake
+      - /lib64/cmake
 
   - name: mbedtls
     buildsystem: cmake-ninja
@@ -42,6 +46,10 @@ modules:
         sha256: 1b899f355022e8d02c4d313196a0a16af86c5a692456fa99d302915b8cf0320a
     cleanup:
       - /include
+      - /lib/pkgconfig
+      - /lib64/pkgconfig
+      - /lib/cmake
+      - /lib64/cmake
 
   - name: fmt
     buildsystem: cmake-ninja
@@ -54,6 +62,10 @@ modules:
         sha256: 4943cb165f3f587f26da834d3056ee8733c397e024145ca7d2a8a96bb71ac281
     cleanup:
       - /include
+      - /lib/pkgconfig
+      - /lib64/pkgconfig
+      - /lib/cmake
+      - /lib64/cmake
 
   - name: yara
     buildsystem: autotools
@@ -64,6 +76,41 @@ modules:
         commit: a6f6ce1d6d74a03c396660db25765f2a794d9e30
     cleanup:
       - /include
+      - /lib/pkgconfig
+      - /lib64/pkgconfig
+      - /lib/cmake
+      - /lib64/cmake
+
+  - name: libssh2
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DBUILD_SHARED_LIBS=ON
+      - -DENABLE_ZLIB_COMPRESSION=OFF
+      - -DENABLE_MANUAL=OFF
+      - -DENABLE_EXAMPLES=OFF
+      - -DENABLE_TESTING=OFF
+    sources:
+      - type: git
+        url: https://github.com/libssh2/libssh2.git
+        tag: libssh2-1.11.1
+    cleanup:
+      - /include
+      - /lib/pkgconfig
+      - /lib64/pkgconfig
+      - /lib/cmake
+      - /lib64/cmake
+
+  - name: md4c
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DBUILD_SHARED_LIBS=ON
+      - -DMD4C_BUILD_TESTS=OFF
+      - -DMD4C_BUILD_EXAMPLES=OFF
+      - -DMD4C_BUILD_DOCS=OFF
+    sources:
+      - type: git
+        url: https://github.com/mity/md4c.git
+        tag: release-0.5.2
 
   - name: imhex
     buildsystem: cmake-ninja
@@ -74,18 +121,20 @@ modules:
       - -DUSE_SYSTEM_YARA=ON
       - -DIMHEX_OFFLINE_BUILD=ON
       - -DIMHEX_STRICT_WARNINGS=OFF
+      - -DCMAKE_INSTALL_LIBDIR=lib
+      - -DCMAKE_INSTALL_RPATH='$ORIGIN/../lib:$ORIGIN/../lib64'
     sources:
       - type: git
         url: https://github.com/WerWolv/ImHex.git
-        tag: v1.37.4
-        commit: b6b24dfd291c0f82623b27f00d902ffa4f3a573d
+        tag: v1.38.0
+        commit: 83650c908d9228fa369596413e18393623c75984
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
       - type: git
         url: https://github.com/WerWolv/ImHex-Patterns.git
-        tag: ImHex-v1.37.4
-        commit: 375145e759689f7c88e5864f61315b90f50a65b3
+        tag: ImHex-v1.38.0
+        commit: 4646e4b9653c8b208024c5285b00f3084684021c
         dest: ImHex-Patterns
         x-checker-data:
           type: git
