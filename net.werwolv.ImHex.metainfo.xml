@@ -38,15 +38,15 @@
   <url type="homepage">https://imhex.werwolv.net</url>
   <url type="bugtracker">https://github.com/WerWolv/ImHex/issues</url>
   <url type="help">https://docs.werwolv.net/imhex</url>
-  <url type="donation">https://www.patreon.com/werwolv</url>
+  <url type="donation">https://github.com/sponsors/WerWolv</url>
   <url type="contact">https://imhex.werwolv.net/discord</url>
   <url type="vcs-browser">https://github.com/WerWolv/ImHex</url>
   <url type="contribute">https://github.com/WerWolv/ImHex/blob/master/CONTRIBUTING.md</url>
   <launchable type="desktop-id">imhex.desktop</launchable>
   <screenshots>
     <screenshot type="default" width="1920" height="1017">
-        <image type="source">https://raw.githubusercontent.com/flathub/net.werwolv.ImHex/master/screenshots/screenshot1.png</image>
-        <caption>Using a pattern to parse and highlight different sections of an ELF executable file</caption>
+      <image type="source">https://raw.githubusercontent.com/flathub/net.werwolv.ImHex/master/screenshots/screenshot1.png</image>
+      <caption>Using a pattern to parse and highlight different sections of an ELF executable file</caption>
     </screenshot>
     <screenshot type="default" width="1920" height="1017">
       <image type="source">https://raw.githubusercontent.com/flathub/net.werwolv.ImHex/master/screenshots/screenshot2.png</image>
@@ -120,4 +120,8 @@
     <release version="1.17.0" date="2022-04-18"/>
   </releases>
   <update_contact>hey@werwolv.net</update_contact>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </recommends>
 </component>
