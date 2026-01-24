@@ -77,6 +77,7 @@ modules:
       - type: git
         url: https://github.com/libssh2/libssh2.git
         tag: libssh2-1.11.1
+        commit: a312b43325e3383c865a87bb1d26cb52e3292641
     cleanup:
       - /include
       - /lib/pkgconfig
@@ -95,6 +96,7 @@ modules:
       - type: git
         url: https://github.com/mity/md4c.git
         tag: release-0.5.2
+        commit: 729e6b8b320caa96328968ab27d7db2235e4fb47
 
   - name: imhex
     buildsystem: cmake-ninja
