@@ -1,6 +1,6 @@
 app-id: net.werwolv.ImHex
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: imhex
 rename-desktop-file: imhex.desktop
@@ -51,22 +51,6 @@ modules:
       - /lib/cmake
       - /lib64/cmake
 
-  - name: fmt
-    buildsystem: cmake-ninja
-    config-opts:
-      - -DBUILD_SHARED_LIBS=ON
-      - -DFMT_TEST=OFF
-    sources:
-      - type: archive
-        url: https://github.com/fmtlib/fmt/releases/download/10.0.0/fmt-10.0.0.zip
-        sha256: 4943cb165f3f587f26da834d3056ee8733c397e024145ca7d2a8a96bb71ac281
-    cleanup:
-      - /include
-      - /lib/pkgconfig
-      - /lib64/pkgconfig
-      - /lib/cmake
-      - /lib64/cmake
-
   - name: yara
     buildsystem: autotools
     sources:
@@ -93,6 +77,7 @@ modules:
       - type: git
         url: https://github.com/libssh2/libssh2.git
         tag: libssh2-1.11.1
+        commit: a312b43325e3383c865a87bb1d26cb52e3292641
     cleanup:
       - /include
       - /lib/pkgconfig
@@ -111,10 +96,13 @@ modules:
       - type: git
         url: https://github.com/mity/md4c.git
         tag: release-0.5.2
+        commit: 729e6b8b320caa96328968ab27d7db2235e4fb47
 
   - name: imhex
     buildsystem: cmake-ninja
     builddir: true
+    build-options:
+        cxxflags: -Wno-error=maybe-uninitialized
     config-opts:
       - -DUSE_SYSTEM_CURL=ON
       - -DUSE_SYSTEM_FMT=ON
